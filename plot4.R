@@ -34,7 +34,7 @@ points(dateTimeStamp,power_subsetDT$Sub_metering_2,type="l", col="red")
 points(dateTimeStamp,power_subsetDT$Sub_metering_3,type="l",col="blue")
 legend("topright",lty = c(1, 1, 1),
        legend=c("Sub_Metering_1","Sub_Metering_2","Sub_Metering_3"),
-       col= c("black","red","blue"), cex=0.35)
+       col= c("black","red","blue"), cex=0.9)
 #plot3
 plot(dateTimeStamp,power_subsetDT$Voltage,type="l",xlab="datetime",ylab="Voltage")
 

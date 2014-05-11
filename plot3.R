@@ -26,14 +26,14 @@ dateTimeStamp <- strptime(paste(power_subsetDT$Date,power_subsetDT$Time,sep="T")
 png(file="plot3.png",width=500,height=500)
 
 # plot the first graph
-plot(dateTimeStamp,power_subsetDT$Sub_metering_1,type="l",xlab="",ylab="Energy/submetering",col="black")
+plot(dateTimeStamp,power_subsetDT$Sub_metering_1,type="l",xlab="",ylab="Energy sub metering",col="black")
 # add new data point to the same graph 
 points(dateTimeStamp,power_subsetDT$Sub_metering_2,type="l", col="red")
 # add new data point to the same graph 
 points(dateTimeStamp,power_subsetDT$Sub_metering_3,type="l",col="blue")
 # add legend
 legend("topright",lty = c(1, 1, 1),
-       legend=c("Sub_Metering1","Sub_Metering2","Sub_Metering3"),
+       legend=c("Sub_Metering_1","Sub_Metering_2","Sub_Metering_3"),
        col= c("black","red","blue"), cex=0.9)
 
 dev.off()

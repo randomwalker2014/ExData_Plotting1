@@ -1,7 +1,5 @@
 ## Code for plot # 3 
 
-## Code for plot # 3
-
 require(data.table)
 # read large file into a data table
 powerDT <- suppressWarnings(fread("household_power_consumption.txt"))
